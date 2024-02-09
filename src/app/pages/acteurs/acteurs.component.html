@@ -1,5 +1,20 @@
-<div class="container">
 
+<div >
+<div class="ajout">
+  <button class="btn" (click)="openDialog()">
+    Ajouter un acteur
+  </button>
+</div>
+<div class="rechercher">
+<form action="">
+  <input type="search" placeholder="rechercher">
+</form>
+</div>
+</div>
+
+
+<div class="container">
+  
     
     <div  class="row justify-content-center">
     <table>
@@ -9,6 +24,8 @@
               <th>Avatar</th>
               <th>Type acteur</th>
               <th>Description</th>
+              <th>Action</th>
+
               <!-- <th>Email</th>
               <th>Adresse</th>
               <th>Action</th> -->
@@ -18,7 +35,7 @@
         <tr >
           <!-- Adjust the properties based on your data structure -->
           <td><input type="checkbox" class="check"></td>
-          <td><img src="../assets/user.png"></td>
+          <td><img src="../assets/img/theme/acteur.webp"></td>
           <td>lorem</td>
           <td>lorem</td>
           <td class="supp">Supprimer</td>
@@ -26,11 +43,7 @@
       </tbody>
   </table>
 </div>
-<div class="ajout">
-    <button class="btn" >
-      Ajouter un acteur
-    </button>
-  </div>
+
    </div>
   
   

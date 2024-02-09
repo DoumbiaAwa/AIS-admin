@@ -5,7 +5,7 @@ table {
     // border-collapse: collapse;
     border: 2px solid white;
     background: white;
-    margin-top: 10% !important;
+    margin-top: 40px!important;
     z-index: 100 !important;
 }
 
@@ -63,23 +63,43 @@ line-height: 20px; /* 166.667% */
 .supp{
     color: red;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .btn{
         
-    width: 200px;
-    height: 30px;
+    width: 150px;
+    height: 35px;
     padding: 6px 0px 6px 8px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 5px;
 background: var(--color1, #f77605);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-margin-left: 70%;
-margin-top: 50px;
+margin-left: 80%;
+margin-top: 60px;
 }
 
+
+
+.rechercher{
+    
+margin-top: -15px;
+margin-left: 10px;
+}
+input{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+background-color: white;
+border-color: #2B6706;
+
+}
+
+form, input,::placeholder{
+    font-size: 15px;
+}
 
 // button{
 //     width: 181px;
@@ -99,4 +119,8 @@ margin-top: 50px;
 // cursor: pointer;
 // }
 
+img{
+width: 40px;
+height: 40px;
+}
 

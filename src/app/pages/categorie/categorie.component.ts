@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AddActeurComponent } from '../add-acteur/add-acteur.component';
+import { AddCategorieComponent } from '../add-categorie/add-categorie.component';
+
 @Component({
-  selector: 'app-acteurs',
-  templateUrl: './acteurs.component.html',
-  styleUrls: ['./acteurs.component.scss']
+  selector: 'app-categorie',
+  templateUrl: './categorie.component.html',
+  styleUrls: ['./categorie.component.scss']
 })
-export class ActeursComponent implements OnInit {
+export class CategorieComponent implements OnInit {
 
   constructor(private dialog: MatDialog) {}
   
   openDialog() {
-    const dialogRef = this.dialog.open(AddActeurComponent , {
+    const dialogRef = this.dialog.open(AddCategorieComponent , {
       width: '528px',
       height: '500px',
       panelClass: 'warning-dialog',
@@ -21,6 +22,7 @@ export class ActeursComponent implements OnInit {
      },
     });
   }
+  
 
   ngOnInit(): void {
   }

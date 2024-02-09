@@ -20,6 +20,13 @@ import { ComponentsModule } from './components/components.module';
 // import { EnqueteComponent } from './enquete/enquete.component';
 // import { ConseilsComponent } from './conseils/conseils.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { ZoneProductionComponent } from './pages/zone-production/zone-production.component';
+// import { ViewConseilsComponent } from './view-conseils/view-conseils.component';
+// import { AddActeurComponent } from './pages/add-acteur/add-acteur.component';
+// import { SpeculationComponent } from './pages/speculation/speculation.component';
+// import { AddSpeculationComponent } from './add-speculation/add-speculation.component';
+// import { CategorieComponent } from './pages/categorie/categorie.component';
+// import { AddCategorieComponent } from './pages/add-categorie/add-categorie.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -36,6 +43,13 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
+    ZoneProductionComponent,
+    // ViewConseilsComponent,
+    // AddActeurComponent,
+    // SpeculationComponent,
+    // AddSpeculationComponent,
+    // CategorieComponent,
+    // AddCategorieComponent,
     // CompteDetailComponent,
     // MyComponentComponent,
     // PagesComponent,
