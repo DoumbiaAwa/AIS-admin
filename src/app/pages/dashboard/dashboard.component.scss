@@ -90,6 +90,24 @@ h1{
     font-weight: bold;
 }
 
+.carde{
+    width: 450px;
+    height: 13%;
+    flex-shrink: 0;
+    border: 1px solid var(--white, #276f1c);
+ background-color: white;
+box-shadow: 0px 4px 4px 0px rgba(40, 114, 19, 0.25);
+margin-left: 30px;
+display: flex;
+flex-direction: row;
+
+}
+
+// #chart {
+//     max-width: 650px;
+//     margin: 35px auto;
+//   }
+
 
 
   

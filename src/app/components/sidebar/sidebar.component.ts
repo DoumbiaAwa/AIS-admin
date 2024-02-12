@@ -8,17 +8,16 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/compte', title: 'Comptes',  icon:'ni-planet text-blue', class: '' },
-    { path: '/acteur', title: 'Acteurs',  icon:'ni-pin-3 text-orange', class: '' },
-    { path: '/conseils', title: 'Conseils',  icon:'ni-single-02 text-yellow', class: '' },
-    // { path: '/enquete', title: 'Enquêtes',  icon:'ni-bullet-list-67 text-red', class: '' },
-    { path: '/message', title: 'Messages',  icon:'ni-key-25 text-info', class: '' },
-    { path: '/produit', title: 'Produits',  icon:'ni-circle-08 text-pink', class: '' },
-    { path: '/categori', title: 'Categories',  icon:'ni-circle-08 text-pink', class: '' },
-    { path: '/speculation', title: 'Speculations',  icon:'ni-circle-08 text-pink', class: '' },
-    { path: '/zone', title: 'Zone de production',  icon:'ni-circle-08 text-pink', class: '' }
-
+    { path: '/dashboard', title: 'Dashboard',  icon: 'fas fa-tachometer-alt', class: '' },
+    { path: '/compte', title: 'Comptes', icon: 'fas fa-user text-white', class: '' },
+    { path: '/acteur', title: 'Acteurs', icon: 'fas fa-users text-white', class: '' },
+    { path: '/conseils', title: 'Conseils', icon: 'fas fa-lightbulb text-white', class: '' },
+    // { path: '/enquete', title: 'Enquêtes', icon: 'fas fa-list-alt text-white', class: '' },
+    { path: '/message', title: 'Messages', icon: 'fas fa-envelope text-white', class: '' },
+    { path: '/produit', title: 'Filière', icon: 'fas fa-industry text-white', class: '' },
+    { path: '/categori', title: 'Categories', icon: 'fas fa-list text-white', class: '' },
+    { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie text-white', class: '' },
+    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-white', class: '' }
 ];
 
 @Component({
