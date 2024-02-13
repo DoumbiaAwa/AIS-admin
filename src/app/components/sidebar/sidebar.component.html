@@ -1,5 +1,5 @@
-<nav class="navbar navbar-vertical navbar-expand-md navbar-light" style="background-color: #C1FFAC;" id="sidenav-main">
-  <div class="container-fluid" style="background-color: #C1FFAC;">
+<nav class="navbar navbar-vertical navbar-expand-md navbar-light" style="background-color: #39AD0E;" id="sidenav-main">
+  <div class="container-fluid" style="background-color: #39AD0E;">
   
     <!-- Brand -->
     <a class="navbar-brand pt-0" routerLinkActive="active" [routerLink]="['/dashboard']">
@@ -7,7 +7,7 @@
     </a>
    
     <!-- Collapse -->
-    <div class="collapse navbar-collapse"  style="background-color: #C1FFAC; color: #FFAA00
+    <div class="collapse navbar-collapse"  style="background-color: #39AD0E; color: #FFAA00
 ; font-weight: bold;" [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
       <!-- Collapse header -->
      
@@ -23,13 +23,13 @@
         </div>
       </form> -->
       <!-- Navigation -->
-      <ul class="navbar-nav" style="background-color: #C1FFAC; color: #FFAA00
+      <ul class="navbar-nav" style="background-color: #39AD0E; color: #FFAA00
 ; font-weight: bold;">
-          <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item" style="background-color: #C1FFAC; color: #FFAA00
+          <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item" style="background-color: #39AD0E; color: #FFAA00
 ; font-weight: bold;">
               <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link" style="color: #FFAA00
 ; font-weight: bold;">
-                  <i class="ni {{menuItem.icon}}" style="color: white;"></i>
+                  <i class="ni {{menuItem.icon}}" style="color: #FFAA00;"></i>
                   {{menuItem.title}}
               </a>
           </li>

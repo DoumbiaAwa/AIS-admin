@@ -9,16 +9,16 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Dashboard',  icon: 'fas fa-tachometer-alt', class: '' },
-    { path: '/compte', title: 'Comptes', icon: 'fas fa-user text-white', class: '' },
-    { path: '/acteur', title: 'Acteurs', icon: 'fas fa-users text-white', class: '' },
-    { path: '/conseils', title: 'Conseils', icon: 'fas fa-lightbulb text-white', class: '' },
-    // { path: '/enquete', title: 'Enquêtes', icon: 'fas fa-list-alt text-white', class: '' },
-    { path: '/message', title: 'Messages', icon: 'fas fa-envelope text-white', class: '' },
-    { path: '/produit', title: 'Filière', icon: 'fas fa-industry text-white', class: '' },
-    { path: '/categori', title: 'Categories', icon: 'fas fa-list text-white', class: '' },
-    { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie text-white', class: '' },
-    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-white', class: '' }
-];
+    { path: '/compte', title: 'Comptes', icon: 'fas fa-user text-#FFAA00', class: '' },
+    { path: '/acteur', title: 'Acteurs', icon: 'fas fa-users text-#FFAA00', class: '' },
+    { path: '/conseils', title: 'Conseils', icon: 'fas fa-lightbulb text-#FFAA00', class: '' },
+    // { path: '/enquete', title: 'Enquêtes', icon: 'fas fa-list-alt text-#FFAA00', class: '' },
+    { path: '/message', title: 'Messages', icon: 'fas fa-envelope text-#FFAA00', class: '' },
+    { path: '/produit', title: 'Filière', icon: 'fas fa-industry text-#FFAA00', class: '' },
+    { path: '/categori', title: 'Categories', icon: 'fas fa-list text-#FFAA00', class: '' },
+    { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie text-#FFAA00', class: '' },
+    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-#FFAA00', class: '' }
+]
 
 @Component({
   selector: 'app-sidebar',
