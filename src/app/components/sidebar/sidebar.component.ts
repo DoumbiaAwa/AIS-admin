@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 declare interface RouteInfo {
     path: string;
     title: string;
@@ -17,7 +18,9 @@ export const ROUTES: RouteInfo[] = [
     { path: '/produit', title: 'Filière', icon: 'fas fa-industry text-#FFAA00', class: '' },
     { path: '/categori', title: 'Categories', icon: 'fas fa-list text-#FFAA00', class: '' },
     { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie text-#FFAA00', class: '' },
-    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-#FFAA00', class: '' }
+    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-#FFAA00', class: '' },
+    { path: '/parametre', title: 'Paramètres généraux', icon: 'fas fa-globe text-#FFAA00', class: '' },
+
 ]
 
 @Component({

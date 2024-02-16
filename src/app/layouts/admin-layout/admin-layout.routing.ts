@@ -9,6 +9,8 @@ import { ProduitComponent } from 'src/app/pages/produit/produit.component';
 import { CategorieComponent } from 'src/app/pages/categorie/categorie.component';
 import { SpeculationComponent } from 'src/app/pages/speculation/speculation.component';
 import { ZoneProductionComponent } from 'src/app/pages/zone-production/zone-production.component';
+// import { AddMessageComponent } from 'src/app/pages/add-message/add-message.component';
+import { ParametreComponent } from 'src/app/parametre/parametre.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     {path:'acteur',           component: ActeursComponent},
@@ -20,6 +22,8 @@ export const AdminLayoutRoutes: Routes = [
     {path:'categori',         component: CategorieComponent },
     {path:'speculation',      component: SpeculationComponent },
     {path:'zone',             component: ZoneProductionComponent },
+    {path:'parametre',        component:  ParametreComponent },
+    // {path:'add-message',      component: AddMessageComponent},
 
 
     

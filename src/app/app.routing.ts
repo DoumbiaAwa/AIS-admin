@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 // import { LoginComponent } from 'src/app/pages/login/login.component';
+// import { AddMessageComponent } from './pages/add-message/add-message.component';
 
 const routes: Routes =[
   {
@@ -19,7 +20,8 @@ const routes: Routes =[
       {
         path: '',
         loadChildren: () => import('src/app/layouts/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
-      }
+      },
+      
     ]
   }, 
 
@@ -36,16 +38,13 @@ const routes: Routes =[
     ]
   },
 
-  // {
-  // path: 'login',
-  // component: LoginComponent,
-  // loadChildren: () => import('src/app/pages/login/login.component').then(m => m.LoginComponent)
-  // },
-
+ 
    {
     path: '**',
     redirectTo: 'dashboard'
   },
+
+  
  
 ];
 

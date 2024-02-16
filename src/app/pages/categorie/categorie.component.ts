@@ -17,7 +17,7 @@ export class CategorieComponent implements OnInit {
       height: '500px',
       panelClass: 'warning-dialog',
       position: { 
-      top: '-20%',
+      top: '-10%',
       left: '35%'
      },
     });

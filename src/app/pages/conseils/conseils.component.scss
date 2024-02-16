@@ -43,6 +43,21 @@
 .ctn{
     margin-top: 10%;
 }
+
+select{
+    width: 50px;
+    height: 30px;
+    // padding: 11.865px 16.611px 11.865px 23.73px;;
+    // gap: 7.91px;
+    // flex-shrink: 0;
+    border-radius: 5px;
+    border: 0.791px solid #D2CECE;
+    background: var(--white, #FFF);
+    font-size: 10px;
+}
+.filtre{
+    margin-top: 20px;
+}
     
 
    
