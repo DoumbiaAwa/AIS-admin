@@ -16,7 +16,7 @@ export class SpeculationComponent implements OnInit {
       height: '600px',
       panelClass: 'warning-dialog',
       position: { 
-      top: '-20%',
+      top: '-30%',
        left: '35%' },
     });
   }

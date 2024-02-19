@@ -15,7 +15,7 @@ export class ZoneProductionComponent implements OnInit {
       height: '500px',
       panelClass: 'warning-dialog',
       position: { 
-      top: '-10%',
+      top: '-20%',
       left: '35%'
      },
     });

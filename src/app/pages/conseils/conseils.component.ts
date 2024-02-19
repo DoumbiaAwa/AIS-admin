@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ViewConseilsComponent } from 'src/app/view-conseils/view-conseils.component';
+import { ViewConseilsComponent } from 'src/app/pages/view-conseils/view-conseils.component';
 @Component({
   selector: 'app-conseils',
   templateUrl: './conseils.component.html',

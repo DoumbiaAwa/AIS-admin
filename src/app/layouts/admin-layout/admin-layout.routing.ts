@@ -10,7 +10,8 @@ import { CategorieComponent } from 'src/app/pages/categorie/categorie.component'
 import { SpeculationComponent } from 'src/app/pages/speculation/speculation.component';
 import { ZoneProductionComponent } from 'src/app/pages/zone-production/zone-production.component';
 // import { AddMessageComponent } from 'src/app/pages/add-message/add-message.component';
-import { ParametreComponent } from 'src/app/parametre/parametre.component';
+import { ParametreComponent } from 'src/app/pages/parametre/parametre.component';
+import { CorbeilleComponent } from 'src/app/pages/corbeille/corbeille.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     {path:'acteur',           component: ActeursComponent},
@@ -23,6 +24,7 @@ export const AdminLayoutRoutes: Routes = [
     {path:'speculation',      component: SpeculationComponent },
     {path:'zone',             component: ZoneProductionComponent },
     {path:'parametre',        component:  ParametreComponent },
+    {path:'corbeille',        component:  CorbeilleComponent },
     // {path:'add-message',      component: AddMessageComponent},
 
 

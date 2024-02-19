@@ -7,8 +7,7 @@
     </a>
    
     <!-- Collapse -->
-    <div class="collapse navbar-collapse"  style="background-color: white; color: #276f1c
-; font-weight: bold;" [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
+    <div class="collapse navbar-collapse"  [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
       <!-- Collapse header -->
      
       <!-- Form -->
@@ -23,17 +22,14 @@
         </div>
       </form> -->
       <!-- Navigation -->
-      <ul class="navbar-nav" style="background-color: white; color: #276f1c
-; font-weight: bold;">
-          <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item" style="background-color: white; color: #276f1c
-; font-weight: bold;">
-              <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link" style="color: #276f1c
-; font-weight: bold;">
-                  <i class="ni {{menuItem.icon}}" style="color: #276f1c;"></i>
-                  {{menuItem.title}}
-              </a>
-          </li>
-      </ul>
+      <ul class="navbar-nav">
+        <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+            <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+                <i class="ni {{menuItem.icon}}"></i>
+                {{menuItem.title}}
+            </a>
+        </li>
+    </ul>
     
     </div>
     

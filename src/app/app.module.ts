@@ -20,6 +20,7 @@ import { ComponentsModule } from './components/components.module';
 // import { EnqueteComponent } from './enquete/enquete.component';
 // import { ConseilsComponent } from './conseils/conseils.component';
 import {MatDialogModule} from '@angular/material/dialog';
+// import { CorbeilleComponent } from './pages/corbeille/corbeille.component';
 // import { ParametreComponent } from './parametre/parametre.component';
 // import { DemandeMessageComponent } fro./pages/demande-message/demande-message.componentent';
 @NgModule({
@@ -38,6 +39,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
+    // CorbeilleComponent,
     // ParametreComponent,
     // DemandeMessageComponent,
     // CompteDetailComponent,
