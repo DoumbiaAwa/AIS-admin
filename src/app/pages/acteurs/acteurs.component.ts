@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddActeurComponent } from '../add-acteur/add-acteur.component';
+import { ActeurService } from 'src/app/services/acteur/acteur.service';
 @Component({
   selector: 'app-acteurs',
   templateUrl: './acteurs.component.html',
@@ -8,7 +9,7 @@ import { AddActeurComponent } from '../add-acteur/add-acteur.component';
 })
 export class ActeursComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, private acteurService:ActeurService) {}
   
   openDialog() {
     const dialogRef = this.dialog.open(AddActeurComponent , {
@@ -23,6 +24,7 @@ export class ActeursComponent implements OnInit {
   }
 
   ngOnInit(): void {
+   
   }
 
 }
