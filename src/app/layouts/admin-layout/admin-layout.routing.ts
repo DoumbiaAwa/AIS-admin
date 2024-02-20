@@ -12,6 +12,8 @@ import { ZoneProductionComponent } from 'src/app/pages/zone-production/zone-prod
 // import { AddMessageComponent } from 'src/app/pages/add-message/add-message.component';
 import { ParametreComponent } from 'src/app/pages/parametre/parametre.component';
 import { CorbeilleComponent } from 'src/app/pages/corbeille/corbeille.component';
+import { PaysComponent } from 'src/app/pages/pays/pays.component';
+import { UniteComponent } from 'src/app/pages/unite/unite.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     {path:'acteur',           component: ActeursComponent},
@@ -25,6 +27,8 @@ export const AdminLayoutRoutes: Routes = [
     {path:'zone',             component: ZoneProductionComponent },
     {path:'parametre',        component:  ParametreComponent },
     {path:'corbeille',        component:  CorbeilleComponent },
+    {path:'pays',              component:  PaysComponent  },
+    {path:'unite',              component: UniteComponent  },
     // {path:'add-message',      component: AddMessageComponent},
 
 

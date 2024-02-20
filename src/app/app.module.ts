@@ -26,6 +26,11 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddActeurComponent } from './pages/add-acteur/add-acteur.component';
+// import { PaysComponent } from './pages/pays/pays.component';
+// import { AddPaysComponent } from './pages/add-pays/add-pays.component';
+// import { PagesComponent } from './pages/unite/pages/pages.component';
+// import { UniteComponent } from './pages/unite/unite.component';
+// import { AddUniteComponent } from './pages/add-unite/add-unite.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -44,7 +49,12 @@ import { AddActeurComponent } from './pages/add-acteur/add-acteur.component';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    AddActeurComponent
+    AddActeurComponent,
+    // PaysComponent,
+    // AddPaysComponent,
+    // PagesComponent,
+    // UniteComponent,
+    // AddUniteComponent
     // CorbeilleComponent,
     // ParametreComponent,
     // DemandeMessageComponent,

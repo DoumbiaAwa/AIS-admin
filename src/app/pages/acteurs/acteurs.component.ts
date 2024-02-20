@@ -27,4 +27,31 @@ export class ActeursComponent implements OnInit {
    
   }
 
+
+
+
+   change() {
+    const bouton = document.getElementById('bouton');
+    var boutonEtat = true;
+    bouton.addEventListener('click', () => {
+      if (boutonEtat) {
+        bouton.textContent = 'Désactiver';
+        bouton.classList.remove('active');
+        bouton.classList.add('desactive');
+        // Ajoutez ici les actions à effectuer lorsque le bouton est activé
+      } else {
+        bouton.textContent = 'Activer';
+        bouton.classList.remove('desactive');
+        bouton.classList.add('active');
+        // Ajoutez ici les actions à effectuer lorsque le bouton est désactivé
+      }
+  
+      boutonEtat = !boutonEtat; // Inverse l'état du bouton
+    });
+  
+  
+
+
+}
+
 }

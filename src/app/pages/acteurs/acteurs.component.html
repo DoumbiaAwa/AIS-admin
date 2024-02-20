@@ -13,7 +13,7 @@
         <h3 class="mb-0">Liste des Acteurs</h3>
       </div>
       <div class="table-responsive">
-        <table class="table align-items-center table-flush">
+        <table class="table align-items-center table-flush" style="width: 100%;">
           <thead class="thead-light">
             <tr>
               <!-- <th scope="col">Avatar</th> -->
@@ -23,6 +23,7 @@
               <th>description</th>
               <th>Date d'ajout</th>
               <th>Date Modification</th>
+              <th>Personne</th>
               <th>Action</th>
               <th>Statut</th>
             </tr>
@@ -36,7 +37,15 @@
               <td>lorem</td>
               <td>lorem</td>
               <td>lorem</td>
-              <td class="supp">Activer</td>
+              <td>
+                <button class="modify" title="Modifier">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button class="delete" title="Supprimer">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+              <td  id="bouton" (click)="change()">Activer</td>
             </tr>
           </tbody>
         </table>

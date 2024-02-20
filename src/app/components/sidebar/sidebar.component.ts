@@ -20,6 +20,10 @@ export const ROUTES: RouteInfo[] = [
     { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie text-green', class: '' },
     { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-blue', class: '' },
     { path: '/parametre', title: 'Paramètres généraux', icon: 'fas fa-cogs', class: '' },
+    { path: '/pays', title: 'Pays', icon: 'fas fa-flag text-flag-color text-purple', class: '' },
+    { path: '/unite', title: 'Unité', icon: 'fas fa-ruler text-gray', class: '' }
+
+
     // { path: '/corbeille', title: 'Corbeille', icon: 'fas fa-globe text-#FFAA00', class: '' },
 
 ]
