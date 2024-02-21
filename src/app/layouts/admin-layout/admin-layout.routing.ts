@@ -14,7 +14,9 @@ import { ParametreComponent } from 'src/app/pages/parametre/parametre.component'
 import { CorbeilleComponent } from 'src/app/pages/corbeille/corbeille.component';
 import { PaysComponent } from 'src/app/pages/pays/pays.component';
 import { UniteComponent } from 'src/app/pages/unite/unite.component';
+// import { LoginComponent } from 'src/app/components/login/login.component';
 export const AdminLayoutRoutes: Routes = [
+    // { path: 'login',      component: LoginComponent },
     { path: 'dashboard',      component: DashboardComponent },
     {path:'acteur',           component: ActeursComponent},
     {path:'compte',           component: CompteComponent},

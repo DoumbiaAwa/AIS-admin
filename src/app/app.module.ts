@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
-// import { LoginComponent } from './pages/login/login.component';
+// import { LoginComponent } from './components/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
@@ -31,6 +31,7 @@ import { AddActeurComponent } from './pages/add-acteur/add-acteur.component';
 // import { PagesComponent } from './pages/unite/pages/pages.component';
 // import { UniteComponent } from './pages/unite/unite.component';
 // import { AddUniteComponent } from './pages/add-unite/add-unite.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -50,6 +51,8 @@ import { AddActeurComponent } from './pages/add-acteur/add-acteur.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     AddActeurComponent,
+    LoginComponent
+    // LoginComponent
     // PaysComponent,
     // AddPaysComponent,
     // PagesComponent,
