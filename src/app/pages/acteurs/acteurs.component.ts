@@ -2,12 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddActeurComponent } from '../add-acteur/add-acteur.component';
 import { ActeurService } from 'src/app/services/acteur/acteur.service';
+import { TypeActeur } from 'src/app/model/acteur';
+import { error } from 'console';
 @Component({
   selector: 'app-acteurs',
   templateUrl: './acteurs.component.html',
   styleUrls: ['./acteurs.component.scss']
 })
 export class ActeursComponent implements OnInit {
+
+  // acteurs: any[] =[];
 
   constructor(private dialog: MatDialog, private acteurService:ActeurService) {}
   
@@ -23,8 +27,21 @@ export class ActeursComponent implements OnInit {
     });
   }
 
+  // listeActeur(){
+  //   this.acteurService.getType().subscribe(
+  //     (data) => {
+  //       this.acteurs = data;
+  //     },
+  //     (error) => {
+  //       console.error('erreur', error);
+  //     }
+  //   );
+    
+  // }
+
   ngOnInit(): void {
    
+// this.listeActeur();
   }
 
 
