@@ -1,4 +1,4 @@
-export interface Acteurs{
+export interface TypeActeur{
     idTypeActeur: string,
     libelle: string,
   codeTypeActeur: string,

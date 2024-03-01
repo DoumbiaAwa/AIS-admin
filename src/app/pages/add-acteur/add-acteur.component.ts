@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { ActeurService } from 'src/app/services/acteur/acteur.service';
-import { Acteurs } from 'src/app/model/acteur';
+import { TypeActeur } from 'src/app/model/acteur';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 @Component({
@@ -11,17 +11,16 @@ import { FormControl } from '@angular/forms';
 })
 export class AddActeurComponent implements OnInit {
   acteurForm: FormGroup;
-  acteurData: Acteurs[];
+  acteurData: TypeActeur[];
 
   
   constructor(private dialogRef: MatDialogRef<AddActeurComponent>, private acteurService:ActeurService, private fb: FormBuilder) {
     this.acteurForm = this.fb.group({ 
-      idTypeActeur:'',
-      codeTypeActeur:'',
+  
       libelle: '',
       descriptionTypeActeur: '', 
-      statutTypeActeur: '',
-      personneModif:'',
+      // statutTypeActeur: '',
+      // personneModif:'',
    
      });
    }
@@ -34,12 +33,19 @@ export class AddActeurComponent implements OnInit {
 
   ajout() {
     const acteurFormValue = this.acteurForm.value;
-    this.acteurService.addActeur(acteurFormValue).subscribe((data) => {
-      // Assuming you have a property acteurData to store the fetched data
-      // this.acteurData = data;
-      console.log(data);
-    });
+    this.acteurService.addType(acteurFormValue).subscribe(
+      (data) => {
+        console.log(data);
+      },
+      (error) => {
+        console.error('Error:', error);
+        // Handle the error here, e.g., display an error message to the user
+      }
+    );
   }
+  
+
+
   annuler(): void {
     this.dialogRef.close('annuler');
   }
