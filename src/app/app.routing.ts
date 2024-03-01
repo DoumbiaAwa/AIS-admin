@@ -14,7 +14,6 @@ const routes: Routes = [
     redirectTo: 'login',
     pathMatch: 'full',
   },
-
   {
     path: 'login',
     component: LoginComponent,
@@ -26,21 +25,8 @@ const routes: Routes = [
 
     ]
   },
-
   {
-    path: 'vue',
-    component: ViewConseilsComponent,
-    children: [
-      {
-        path: '',
-        loadChildren: () => import('src/app/pages/view-conseils/view-conseils.component').then(m => m.ViewConseilsComponent)
-      },
-
-    ]
-  },
-
-  {
-    path: '',
+    path: 'pages',
     component: AdminLayoutComponent,
     children: [
       {

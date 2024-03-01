@@ -10,16 +10,15 @@ import { Router } from '@angular/router';
 
 export class ConseilsComponent implements OnInit {
 
-  
- 
-  constructor(private router: Router) {}
-
- 
-  
-  
+  constructor(private router: Router ) {}
 
   ngOnInit(): void {
       
   }
 
+  navigate(path : string){
+    console.log("lol");
+    
+this.router.navigate([path]);
+  }
 }
