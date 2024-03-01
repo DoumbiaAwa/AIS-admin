@@ -1,4 +1,4 @@
-<div class="header bg-gradient-danger pb-5 pt-3 pt-md-5">
+<!-- <div class="header bg-gradient-danger pb-5 pt-3 pt-md-5">
   
 </div>
 
@@ -7,7 +7,6 @@
     <div class="ajout">
         <button class="btn" (click)="openDialog()">Ajouter une Zone</button>
       </div>
-          <!-- <label for="typeFiltre">Filtrer par :</label> -->
     <br>
          <div class="row">
           <div class="col">
@@ -19,8 +18,7 @@
                 <table class="table align-items-center table-flush">
                   <thead class="thead-light">
                     <tr>
-                      <!-- <th></th>
-                      <th>Avatar</th> -->
+                  
                       <th>Photo</th>
                       <th>ID</th>
                       <th>Code</th>
@@ -55,62 +53,47 @@
         </div>
         
         
+         -->
+         <div class="box-body">
+          <div class="container-fluid">
+            <button type="button" style="margin-left: 90%;" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button>
+              <div class="page-title">
+                  <h3> Liste des Zones de production             
+      </h3>
+              </div> 
+              <div class="box box-primary">
+                <div>
+                  <input class="form-control" type="text" placeholder="Search"/>
+                </div>
+                      <table width="80%" class="table table-hover" id="dataTables-example">
+                          <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Code</th>
+                                <th>Nom</th>
+                                <th>Description</th>
+                                <th>Catégorie</th>
+                                <th>Statut</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>lorem</td>
+                              <td>lorem</td>
+                              <td>lorem</td>
+                              <td>lorem</td>
+                              <td>lorem</td>
+                              <td>
+                                  <div class="custom-control custom-switch">
+                                      <input type="checkbox" class="custom-control-input" id="customSwitches1">
+                                      <label class="custom-control-label" for="customSwitches1"></label>
+                                  </div>
+                              </td>
+                          </tr>
+                              
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
         
-        <!-- {
-          "idZoneProduction": "<string>",
-          "codeZone": "<string>",
-          "nomZoneProduction": "<string>",
-          "latitude": "<string>",
-          "longitude": "<string>",
-          "photoZone": "<string>",
-          "dateAjout": "<string>",
-          "dateModif": "<string>",
-          "personneModif": "<string>",
-          "statutZone": "<boolean>",
-          "acteur": {
-            "idActeur": "<string>",
-            "resetToken": "<string>",
-            "tokenCreationDate": "<dateTime>",
-            "codeActeur": "<string>",
-            "nomActeur": "<string>",
-            "adresseActeur": "<string>",
-            "telephoneActeur": "<string>",
-            "whatsAppActeur": "<string>",
-            "latitude": "<string>",
-            "longitude": "<string>",
-            "photoSiegeActeur": "<string>",
-            "logoActeur": "<string>",
-            "niveau3PaysActeur": "<string>",
-            "password": "<string>",
-            "dateAjout": "<string>",
-            "dateModif": "<string>",
-            "personneModif": "<string>",
-            "localiteActeur": "<string>",
-            "emailActeur": "<string>",
-            "filiereActeur": "<string>",
-            "statutActeur": "<boolean>",
-            "typeActeur": [
-              {
-                "idTypeActeur": "<string>",
-                "libelle": "<string>",
-                "codeTypeActeur": "<string>",
-                "statutTypeActeur": "<boolean>",
-                "descriptionTypeActeur": "<string>",
-                "personneModif": "<string>",
-                "dateAjout": "<string>",
-                "dateModif": "<string>"
-              },
-              {
-                "idTypeActeur": "<string>",
-                "libelle": "<string>",
-                "codeTypeActeur": "<string>",
-                "statutTypeActeur": "<boolean>",
-                "descriptionTypeActeur": "<string>",
-                "personneModif": "<string>",
-                "dateAjout": "<string>",
-                "dateModif": "<string>"
-              }
-            ],
-            "maillonActeur": "<string>"
-          }
-        } -->

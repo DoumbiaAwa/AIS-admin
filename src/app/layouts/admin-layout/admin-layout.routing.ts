@@ -14,6 +14,7 @@ import { ParametreComponent } from 'src/app/pages/parametre/parametre.component'
 import { CorbeilleComponent } from 'src/app/pages/corbeille/corbeille.component';
 import { PaysComponent } from 'src/app/pages/pays/pays.component';
 import { UniteComponent } from 'src/app/pages/unite/unite.component';
+import { ViewConseilsComponent } from 'src/app/pages/view-conseils/view-conseils.component';
 // import { LoginComponent } from 'src/app/components/login/login.component';
 export const AdminLayoutRoutes: Routes = [
     // { path: 'login',      component: LoginComponent },
@@ -31,6 +32,8 @@ export const AdminLayoutRoutes: Routes = [
     {path:'corbeille',        component:  CorbeilleComponent },
     {path:'pays',              component:  PaysComponent  },
     {path:'unite',              component: UniteComponent  },
+    {path:'vue',              component: ViewConseilsComponent  },
+
     // {path:'add-message',      component: AddMessageComponent},
 
 

@@ -12,7 +12,7 @@ export class PaysComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(AddPaysComponent, {
-      width: '528px',
+      width: '700px',
       height: '500px',
       panelClass: 'warning-dialog',
       position: { 

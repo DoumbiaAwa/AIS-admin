@@ -11,8 +11,8 @@ export class ZoneProductionComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(AddZoneComponent, {
-      width: '528px',
-      height: '500px',
+      width: '700px',
+      height: '750px',
       panelClass: 'warning-dialog',
       position: { 
       top: '-20%',

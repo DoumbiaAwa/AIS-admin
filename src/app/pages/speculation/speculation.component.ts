@@ -12,11 +12,11 @@ export class SpeculationComponent implements OnInit {
   
   openDialog() {
     const dialogRef = this.dialog.open(AddSpeculationComponent, {
-      width: '528px',
-      height: '600px',
-      panelClass: 'warning-dialog',
+      width: '700px',
+      height: '700px',
+      panelClass: 'warnin-dialog',
       position: { 
-      top: '-30%',
+      top: '-20%',
        left: '35%' },
     });
   }

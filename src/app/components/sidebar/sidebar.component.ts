@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -9,22 +9,21 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'fas fa-tachometer-alt text-blue', class: '' },
-    { path: '/compte', title: 'Comptes', icon: 'fas fa-user text-purple', class: '' },
-    { path: '/acteur', title: 'Acteurs', icon: 'fas fa-users text-yellow', class: '' },
-    { path: '/conseils', title: 'Conseils', icon: 'fas fa-lightbulb text-red', class: '' },
+    { path: '/dashboard', title: 'Dashboard',  icon: 'fas fa-home', class: '' },
+    { path: '/compte', title: 'Comptes', icon: 'fas fa-user-friends', class: '' },
+    { path: '/acteur', title: 'Acteurs', icon: 'fas fa-users ', class: '' },
+    { path: '/conseils', title: 'Conseils', icon: 'fas fa-lightbulb ', class: '' },
     // { path: '/enquete', title: 'Enquêtes', icon: 'fas fa-list-alt text-#FFAA00', class: '' },
-    { path: '/message', title: 'Messages', icon: 'fas fa-envelope text-green', class: '' },
-    { path: '/produit', title: 'Filière', icon: 'fas fa-industry text-orange', class: '' },
-    { path: '/categori', title: 'Categories', icon: 'fas fa-list text-pink', class: '' },
-    { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie text-green', class: '' },
-    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-blue', class: '' },
-    { path: '/parametre', title: 'Paramètres généraux', icon: 'fas fa-cogs', class: '' },
-    { path: '/pays', title: 'Pays', icon: 'fas fa-flag text-flag-color text-purple', class: '' },
-    { path: '/unite', title: 'Unité', icon: 'fas fa-ruler text-gray', class: '' }
+    { path: '/message', title: 'Messages', icon: 'fas fa-envelope ', class: '' },
+    { path: '/produit', title: 'Filière', icon: 'fas fa-industry ', class: '' },
+    { path: '/categori', title: 'Categories', icon: 'fas fa-list ', class: '' },
+    { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie ', class: '' },
+    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe ', class: '' },
+    { path: '/parametre', title: 'Paramètres généraux', icon: 'fas fa-cog', class: '' },
+    { path: '/pays', title: 'Pays', icon: 'fas fa-flag text-flag-color ', class: '' },
+    { path: '/unite', title: 'Unité', icon: 'fas fa-ruler ', class: '' },
 
 
-    // { path: '/corbeille', title: 'Corbeille', icon: 'fas fa-globe text-#FFAA00', class: '' },
 
 ]
 
@@ -46,4 +45,9 @@ export class SidebarComponent implements OnInit {
       this.isCollapsed = true;
    });
   }
-}
+
+  
+
+ 
+  }
+

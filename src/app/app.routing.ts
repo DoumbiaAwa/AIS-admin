@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { ConseilsComponent } from './pages/conseils/conseils.component';
 import { LoginComponent } from 'src/app/login/login.component';
+import { ViewConseilsComponent } from './pages/view-conseils/view-conseils.component';
 // import { AddMessageComponent } from './pages/add-message/add-message.component';
 const routes: Routes = [
   {
@@ -20,6 +22,18 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('src/app/login/login.module').then(m => m.LoginModule)
+      },
+
+    ]
+  },
+
+  {
+    path: 'vue',
+    component: ViewConseilsComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('src/app/pages/view-conseils/view-conseils.component').then(m => m.ViewConseilsComponent)
       },
 
     ]

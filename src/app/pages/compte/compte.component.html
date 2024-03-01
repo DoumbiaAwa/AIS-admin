@@ -1,43 +1,89 @@
 
-<div class="header bg-gradient-danger pb-5 pt-3 pt-md-5">
-  
-</div>
+<div class="box-body">
+  <div class="container-fluid">
+      <div class="page-title" style="text-align: center; font-size: 40px;">
+          <h3>Liste des Comptes Utilisateurs</h3>
+      </div>
+      <button type="button" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button>
 
-<br>
-<!-- Table -->
-<div class="row">
-  <div class="col">
-    <div class="card shadow">
-      <div class="card-header border-0">
-        <h3 class="mb-0">Liste des utilisateurs</h3>
+      <div class="box box-primary">
+        <div>
+          <input class="form-control" type="text" placeholder="Search"/>
+        </div>
+              <table width="80%" class="table table-hover" id="dataTables-example">
+                  <thead>
+                      <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Type</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end" (click)="openDialog()">
+                            <a class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
       </div>
-      <div class="table-responsive">
-        <table class="table align-items-center table-flush">
-          <thead class="thead-light">
-            <tr>
-              <!-- <th scope="col">Avatar</th> -->
-              <th scope="col">Code</th>
-              <th scope="col">Nom</th>
-              <th scope="col">Type</th>
-              <th scope="col">Adresse</th>
-              <th scope="col">Telephone</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Your table rows go here -->
-            <tr>
-              <td>lorem</td>
-              <td>lorem</td>
-              <td>lorem</td>
-              <td>lorem</td>
-              <td>lorem</td>
-              <td><button (click)="openDialog()">voir profil</button></td>
-            </tr>
-            <!-- Add more rows as needed -->
-          </tbody>
-        </table>
-      </div>
-    </div>
   </div>
-</div>

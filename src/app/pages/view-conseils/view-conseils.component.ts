@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-view-conseils',
   templateUrl: './view-conseils.component.html',
@@ -7,12 +6,10 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class ViewConseilsComponent implements OnInit {
 
-  constructor(private dialogRef: MatDialogRef<ViewConseilsComponent>) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  annuler(): void {
-    this.dialogRef.close('annuler');
-  }
+ 
 
 }
