@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { ActeurService } from 'src/app/services/acteur/acteur.service';
-import { TypeActeur } from 'src/app/model/acteur';
+import { TypeActeur } from 'src/app/model/typeActeur';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 @Component({
@@ -10,24 +10,25 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./add-acteur.component.scss']
 })
 export class AddActeurComponent implements OnInit {
+
   acteurForm: FormGroup;
   acteurData: TypeActeur[];
 
-  
-  constructor(private dialogRef: MatDialogRef<AddActeurComponent>, private acteurService:ActeurService, private fb: FormBuilder) {
-    this.acteurForm = this.fb.group({ 
-  
+
+  constructor(private dialogRef: MatDialogRef<AddActeurComponent>, private acteurService: ActeurService, private fb: FormBuilder) {
+    this.acteurForm = this.fb.group({
+
       libelle: '',
-      descriptionTypeActeur: '', 
+      descriptionTypeActeur: '',
       // statutTypeActeur: '',
       // personneModif:'',
-   
-     });
-   }
+
+    });
+  }
 
   ngOnInit(): void {
 
-  
+
     // this.ajout();
   }
 
@@ -43,7 +44,7 @@ export class AddActeurComponent implements OnInit {
       }
     );
   }
-  
+
 
 
   annuler(): void {

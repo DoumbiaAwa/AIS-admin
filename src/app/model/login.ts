@@ -1,9 +1,9 @@
 import { TypeActeur } from "./typeActeur";
 
-export interface Acteur {
-    idActeur:          string;
+export interface Login{
+    idActeur?:          string;
     resetToken?:        string;
-    tokenCreationDate?: Date;
+    tokenCreationDate?: string;
     codeActeur?:        string;
     nomActeur?:         string;
     adresseActeur?:     string;
@@ -14,14 +14,14 @@ export interface Acteur {
     photoSiegeActeur?:  string;
     logoActeur?:        string;
     niveau3PaysActeur?: string;
-    password?:          string;
+    password:          string;
     dateAjout?:         string;
     dateModif?:         string;
     personneModif?:     string;
     localiteActeur?:    string;
-    emailActeur?:       string;
+    emailActeur:       string;
     filiereActeur?:     string;
-    statutActeur?:      boolean;
-    typeActeur:        TypeActeur[];
+    statutActeur?:      string;
+    typeActeur?:        TypeActeur[];
     maillonActeur?:     string;
 }

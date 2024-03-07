@@ -1,7 +1,10 @@
 import { Component, Input, OnInit, Output } from "@angular/core";
 import { CompteDetailComponent } from '../compte-detail/compte-detail.component';
-import { MatDialog } from '@angular/material/dialog';
-
+// import { MatDialog } from '@angular/material/dialog';
+import { Router } from "@angular/router";
+import { CompteService } from "src/app/services/compte/compte.service";
+import { Acteur } from "src/app/model/acteur";
+import { error } from "console";
 @Component({
   selector: 'app-compte',
   templateUrl: './compte.component.html',
@@ -9,46 +12,35 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class CompteComponent implements OnInit {
 
-  data: any[] = [
-    { photo: '', name: 'lorem', email:'lorem', type:'lorem' },
-    // Ajoutez d'autres données selon vos besoins
-  ];
+  acteurs: Acteur[] = [];
 
-  searchTerm: string = '';
-  filteredData: any[] = [];
+  constructor(private router: Router, private compteService : CompteService) { }
 
+ listeCompte() : void{
+  this.compteService.getCompte().subscribe(
+    (data: Acteur[]) => {
+      this.acteurs =data;
+      console.log ('compte', this.acteurs)
 
-  constructor(private dialog: MatDialog) { }
-
-
+    },
+    error => {
+      console.error(error)
+    }
+  );
+ }
 
 
 
   ngOnInit() {
-    this.filteredData = this.data;
+    this.listeCompte();
   }
 
-  filterData(): void {
-    this.filteredData = this.data.filter((item) =>
-      item.name.toLowerCase().includes(this.searchTerm.toLowerCase())
-    );
-  }
+ 
 
-
-
-
-  openDialog() {
-    const dialogRef = this.dialog.open(CompteDetailComponent, {
-      width: '728px', // or your desired width
-      height: '700px', // or your desired height
-      // disableClose: true,
-      panelClass: 'warning-dialog',
-      position: {
-        top: '-50%',
-        left: '30%',
-
-      },
-    });
+  navigate(path : string){
+    console.log("lol");
+    
+   this.router.navigate([path]);
   }
 
 

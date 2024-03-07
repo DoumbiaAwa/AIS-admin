@@ -69,16 +69,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>lorem</td>
-                        <td>lorem</td>
-                        <td>lorem</td>
-                        <td>lorem</td>
+                      <tr *ngFor="let fieliere of filieres">
+                        <td>{{fieliere.idFiliere}}</td>
+                        <td>{{fieliere.codeFiliere}}</td>
+                        <td>{{fieliere.libelleFiliere}}</td>
+                        <td>{{fieliere.descriptionFiliere}}</td>
                         <td>
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" class="custom-control-input" id="customSwitches1">
                                 <label class="custom-control-label" for="customSwitches1"></label>
                             </div>
+                        </td>
+                        <td class="text-end">
+                          <a class="btn btn-outline-success btn-rounded"><i class="fas fa-pen text-green"></i></a>
+                          <a  class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                         

@@ -1,40 +1,3 @@
-<!-- <div class="conteneur">
-    <i class="fas fa-times" style=" margin-left: 95%; cursor: pointer;" (click)="annuler()"></i>
-
-    <h1>Ajouter une Catégorie</h1>
-
-<form>
-   
-   
-     
-    <div class="form-group">
-        <label for="nombre">Libelle</label>
-        <input type="text" id="cat" name="cat"  placeholder="libelle" class="iptform">
-    </div> 
-
-    <div class="form-group">
-        <label for="etat">Filière</label>
-        <select id="etat" name="etat" formControlName="etat">
-            <option value="non-enceinte">filiere1</option>
-            <option value="enceinte">filiere2</option>
-            <option value="pas-detat">filiere3</option> 
-        </select>
-    </div>
-  
-    
-   
-
-    <div class="form-group">
-        <label for="nombre">Description</label>
-        <input type="text" id="cat" name="cat"  placeholder="ajouter une description" class="iptform">
-    </div>
-
-    
-    <div class="action">
-        <button class="enregistrer">Enregistrer</button>
-    </div>
-</form>
-</div> -->
 
 <div class="container">
     <div class="card mb-30">
@@ -43,26 +6,25 @@
         <button type="button" class="btn-close" aria-label="Close" (click)="annuler()"></button>
       </div>
       <div class="card-body">
-        <form>
+        <form [formGroup]="categoriForm" (ngSubmit)="ajoutCategorie()">
           <div class="mb-3">
             <label for="nom" class="form-label">libelle</label>
-            <input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+            <input type="text" class="form-control" id="nom" placeholder="Entrez le nom"  formControlName="libelleCategorie">
           </div>
           <div class="mb-3">
             <div class="form-group">
-                <label for="etat" class="form-label">Filière</label>
-                <select id="etat" class="form-control" name="etat" >
-                    <option value="non-enceinte">filiere1</option>
-                    <option value="enceinte">filiere2</option>
-                    <option value="pas-detat">filiere3</option> 
-                </select>
-            </div>
+              <label for="etat" class="form-label">Filière</label>
+              <select id="etat" class="form-control" formControlName="filiere">
+                  <option *ngFor="let filiere of filieres" [value]="filiere.libelleFiliere">{{filiere.libelleFiliere}}</option>
+              </select>
+          </div>
 
             <label for="adresse" class="form-label">Description</label>
-            <input type="text" class="form-control" id="adresse" placeholder="Entrez la description">
+            <input type="text" class="form-control" id="adresse" placeholder="Entrez la description" formControlName="descriptionCategorie">
           </div>
           <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary">Valider</button>
+            <button type="submit" class="btn btn-primary" style=" background-color: rgba(23, 158, 13, 0.819);
+            border-color: rgba(23, 158, 13, 0.819) ;">Valider</button>
           </div>
         </form>
       </div>

@@ -31,17 +31,17 @@
         <button type="button" class="btn-close" aria-label="Close" (click)="annuler()"></button>
       </div>
       <div class="card-body">
-        <form>
+        <form  [formGroup]="acteurForm" (ngSubmit)="ajout()">
           <div class="mb-3">
             <label for="nom" class="form-label">libelle</label>
-            <input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+            <input type="text" class="form-control" id="nom" placeholder="Entrez le nom" formControlName="libelle">
           </div>
           <div class="mb-3">
             <label for="adresse" class="form-label">Description</label>
-            <input type="text" class="form-control" id="adresse" placeholder="Entrez la description">
+            <input type="text" class="form-control" id="adresse" placeholder="Entrez la description" formControlName="descriptionTypeActeur">
           </div>
           <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary">Valider</button>
+            <button type="submit" style="    background-color: rgba(23, 158, 13, 0.819)" class="btn btn-primary" (click)="ajout()">Valider</button>
           </div>
         </form>
       </div>

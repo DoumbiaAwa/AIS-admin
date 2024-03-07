@@ -1,23 +1,4 @@
-/*------------------------------------------------------------------
-* Bootstrap Simple Admin Template
-* Version: 3.0
-* Author: Alexis Luna
-* Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
--------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Body / #body
-2. Contents / #auth-content
-3. Cards / .card
-4. Miscellaneous
-5. Adjustments to dafault behaviors
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-[1. Body / #body]
-*/
 body {
     background: #f1f1f1;
 }
@@ -97,10 +78,13 @@ p.text-muted {
     margin-right: 10px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    background-color: rgba(23, 158, 13, 0.819);
+    border-color: rgba(23, 158, 13, 0.819) ;
 }
+
 
 .wrapper a,
 .wrapper p>a {
-    color: #3e8ef7;
+    color: #2fcf3f;
     font-weight: 600;
 }

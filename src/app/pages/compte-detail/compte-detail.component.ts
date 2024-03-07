@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-compte-detail',
@@ -8,11 +7,9 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class CompteDetailComponent implements OnInit {
 
-  constructor(private dialogRef: MatDialogRef<CompteDetailComponent>) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  annuler(): void {
-    this.dialogRef.close('annuler');
-  }
+ 
 }

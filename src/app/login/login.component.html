@@ -64,10 +64,10 @@
                     <img class="brand" src="assets/img/bootstraper-logo.png" alt="bootstraper logo" style="width: 60px; height: 60px;">
                 </div>
                 <h6 class="mb-4 text-muted">Login to your account</h6>
-                <form action="" method="" [formGroup]="loginForm">
+                <form action="" method="" [formGroup]="loginForm" (ngSubmit)="onLogin()">
                     <div class="mb-3 text-start">
                         <label for="email" class="form-label">Email adress</label>
-                        <input type="email" class="form-control" placeholder="Enter Email" formControlName="mail" required>
+                        <input type="email" class="form-control" placeholder="Enter Email" formControlName="emailActeur" required>
                     </div>
                     <div class="mb-3 text-start">
                         <label for="password" class="form-label">Password</label>
@@ -81,7 +81,8 @@
                           </label>
                         </div>
                     </div>
-                    <button class="btn btn-primary shadow-2 mb-4" (click)="onLogin()">Login</button>
+                    <button class="btn btn-primary shadow-2 mb-4">Login</button>
+                    <!-- <button class="btn btn-primary shadow-2 mb-4" (click)="onLogin()">Login</button> -->
                 </form>
                 
             </div>

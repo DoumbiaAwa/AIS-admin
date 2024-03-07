@@ -1,9 +1,12 @@
 <div class="wrapper">
     <nav class="navbar navbar-vertical navbar-expand-md navbar-light bg-white">
       <div class="container-fluid" id="sidebar" >
-        <div class="sidebar-header">
-            <img src="assets/img/bootstraper-logo.png" alt="bootraper logo" class="app-logo" style="width: 40px; height: 40px;">
+        
+        <div class="sidebar-header" style="display: flex; align-items: center;">
+            <img src="assets/img/bootstraper-logo.png" alt="bootraper logo" class="app-logo" style="width: 30px; height: 30px;">
+            <h1 style="margin-left: 10px; margin-top: 20px; color: rgb(255, 149, 10);">Koumi</h1>
         </div>
+        
        
           <ul class="list-unstyled components text-secondary">
               <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">

@@ -4,7 +4,7 @@
       <div class="page-title" style="text-align: center; font-size: 40px;">
           <h3>Liste des Comptes Utilisateurs</h3>
       </div>
-      <button type="button" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button>
+      <!-- <button type="button" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button> -->
 
       <div class="box box-primary">
         <div>
@@ -13,77 +13,40 @@
               <table width="80%" class="table table-hover" id="dataTables-example">
                   <thead>
                       <tr>
-                        <th>Photo</th>
-                        <th>Name</th>
+                        <th>Logo</th>
+                        <th>Photo du siège</th>
+                        <th>Nom</th>
                         <th>Email</th>
-                        <th>Role</th>
-                        <th>Type</th>
+                        <th>Localité</th>
+                        <th>Adresse</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Telephone</th>
+                        <th>maillon</th>
                       </tr>
                   </thead>
                   <tbody>
-                      <tr>
-                        <td></td>
-                        <td>Philip Chaney</td>
-                        <td>philip.chaneygmail.com</td>
-                        <td>Manager</td>
-                        <td>Admin</td>
-                          <td class="text-end" (click)="openDialog()">
+                      <tr *ngFor="let acteur of acteurs">
+                      
+                        <td><img [src]= "acteur.logoActeur" alt="Logo"></td>
+                        <td><img [src]="'http://localhost/'+ acteur.photoSiegeActeur" alt="Photo du siège"></td>
+                        <td>{{acteur.nomActeur}}</td>
+                        <td>{{acteur.emailActeur}}</td>
+                        <td>{{acteur.localiteActeur}}r</td>
+                        <td>{{acteur.adresseActeur}}</td> 
+                        <td>{{acteur.latitude}}</td>
+                        <td>{{acteur.longitude}}</td>
+                        <td>{{acteur.telephoneActeur}}</td>
+                        <td>{{acteur.maillonActeur}}</td>
+                          <td class="text-end">
                             <a class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
                           </td>
                       </tr>
-                      <tr>
-                        <td></td>
-                        <td>Philip Chaney</td>
-                        <td>philip.chaneygmail.com</td>
-                        <td>Manager</td>
-                        <td>Admin</td>
-                          <td class="text-end">
-                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
-                          </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Philip Chaney</td>
-                        <td>philip.chaneygmail.com</td>
-                        <td>Manager</td>
-                        <td>Admin</td>
-                          <td class="text-end">
-                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
-                          </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Philip Chaney</td>
-                        <td>philip.chaneygmail.com</td>
-                        <td>Manager</td>
-                        <td>Admin</td>
-                          <td class="text-end">
-                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
-                          </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Philip Chaney</td>
-                        <td>philip.chaneygmail.com</td>
-                        <td>Manager</td>
-                        <td>Admin</td>
-                          <td class="text-end">
-                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
-                          </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Philip Chaney</td>
-                        <td>philip.chaneygmail.com</td>
-                        <td>Manager</td>
-                        <td>Admin</td>
-                          <td class="text-end">
-                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
-                          </td>
-                      </tr>
                       
+                
                   </tbody>
               </table>
+              
           </div>
       </div>
   </div>

@@ -19,6 +19,6 @@ export class ConseilsComponent implements OnInit {
   navigate(path : string){
     console.log("lol");
     
-this.router.navigate([path]);
+   this.router.navigate([path]);
   }
 }
