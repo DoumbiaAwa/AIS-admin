@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Categorie } from 'src/app/model/categorie';
-import { HttpClient, HttpResponse,HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { tap, catchError } from 'rxjs/operators';
+import { CategorieProduit } from 'src/app/model/categorieProduit';
+
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriService {
- private apiurl = 'http://localhost:9000/api-koumi/Categorie'
+  private apiurl = 'http://localhost:9000/api-koumi/Categorie';
+
   constructor(private http: HttpClient) { }
 
   addCategorie(type: any): Observable<any> {
@@ -20,33 +22,34 @@ export class CategoriService {
         tap(data => console.log('Success:', data)),
         catchError(error => {
           console.error('Error:', error);
+          // log the error message to the console
+          console.error('Error adding category:', error.message);
           return throwError(error);
         })
       );
   }
 
-  getCategorie(): Observable<Categorie[]>{
-    return this.http.get<Categorie[]>( `${this.apiurl}/allCategorieByFiliere/:id/`).pipe(
-      tap(_ => console.info()),
-      catchError(error => {
-        console.error("error", error);
-        return[]
-      })
-    )
-  
-  }
-  
-  // deleteFiliere(idFiliere: number): Observable<any>{
-  //   const headers = new HttpHeaders({
-  //     'Content-Type': 'application/json',
-  //   });
-  //   return this.http.delete(`${this.apiurl}/delete/${idFiliere}`, { headers, responseType: 'text' }).pipe(
-  
+  // getCategorie(filiereId: number): Observable<CategorieProduit[]> {
+  //   return this.http.get<CategorieProduit[]>(`${this.apiurl}/allCategorieByFiliere/${filiereId}`).pipe(
+  //     tap(_ => console.info()),
   //     catchError(error => {
-  //       console.error("Erreur sur la suppression du filiere", error);
-  //       return throwError(error);
+  //       console.error("error", error);
+  //       return [];
   //     })
   //   );
-    
   // }
+
+  deleteCategorie(idCategorie: number): Observable<any> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
+
+    return this.http.delete(`${this.apiurl}/delete/${idCategorie}`, { headers, responseType: 'text' }).pipe(
+      tap(data => console.log('Success:', data)),
+      catchError(error => {
+        console.error('Error:', error);
+        return throwError(error);
+      })
+    );
+  }
 }

@@ -17,6 +17,12 @@ import { UniteComponent } from 'src/app/pages/unite/unite.component';
 import { ViewConseilsComponent } from 'src/app/pages/view-conseils/view-conseils.component';
 import { AddActeurComponent } from 'src/app/pages/add-acteur/add-acteur.component';
 import { CompteDetailComponent } from 'src/app/pages/compte-detail/compte-detail.component';
+import { ContinentComponent } from 'src/app/pages/continent/continent.component';
+import { SousRegionComponent } from 'src/app/pages/sous-region/sous-region.component';
+import { RegionComponent } from 'src/app/pages/region/region.component';
+import { CercleComponent } from 'src/app/pages/cercle/cercle.component';
+import { CommuneComponent } from 'src/app/pages/commune/commune.component';
+
 export const AdminLayoutRoutes: Routes = [
     // { path: 'login',      component: LoginComponent },
     { path: 'dashboard',      component: DashboardComponent },
@@ -36,6 +42,12 @@ export const AdminLayoutRoutes: Routes = [
     {path:'vue',              component: ViewConseilsComponent  },
     {path:'type-acteur',       component:   AddActeurComponent },
     {path:'detail',       component:   CompteDetailComponent },
+    {path:'continent',       component:   ContinentComponent},
+    {path:'sousregion',       component:  SousRegionComponent},
+    {path:'region',       component: RegionComponent},
+    {path:'cercle',       component:  CercleComponent},
+    {path:'commune',       component: CommuneComponent},
+     
     
 
     // {path:'add-message',      component: AddMessageComponent},

@@ -1,59 +1,4 @@
-<!-- <div class="header bg-gradient-danger pb-5 pt-3 pt-md-5">
   
-</div>
-
-<div class="container">
-
-    <div class="ajout">
-        <button class="btn" (click)="openDialog()">Ajouter une Zone</button>
-      </div>
-    <br>
-         <div class="row">
-          <div class="col">
-            <div class="card shadow">
-              <div class="card-header border-0">
-                <h3 class="mb-0">Liste des Zones Productions</h3>
-              </div>
-              <div class="table-responsive">
-                <table class="table align-items-center table-flush">
-                  <thead class="thead-light">
-                    <tr>
-                  
-                      <th>Photo</th>
-                      <th>ID</th>
-                      <th>Code</th>
-                      <th>Nom</th>
-                      <th>Latitude</th>
-                      <th>Longitude</th>
-                      <th>DateAjout</th>
-                      <th>DateModif</th>
-                      <th>Personne</th>
-                      <th>Statut</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><img src="../assets/user.png"></td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>Activer</td>
-        
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-         -->
          <div class="box-body">
           <div class="container-fluid">
             <button type="button" style="margin-left: 90%;" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button>
@@ -68,27 +13,33 @@
                       <table width="80%" class="table table-hover" id="dataTables-example">
                           <thead>
                               <tr>
-                                <th>ID</th>
+                                <th>Photo</th>
                                 <th>Code</th>
                                 <th>Nom</th>
-                                <th>Description</th>
-                                <th>Catégorie</th>
+                                <th>latitude</th>
+                                <th>longitude</th>
                                 <th>Statut</th>
                               </tr>
                           </thead>
                           <tbody>
-                            <tr>
-                              <td>lorem</td>
-                              <td>lorem</td>
-                              <td>lorem</td>
-                              <td>lorem</td>
-                              <td>lorem</td>
+                            <tr *ngFor="let zones of zone">
+                              <td>{{zone.photoZone}}</td>
+                              <td>{{zone.codeZone}}</td>
+                              <td>{{zone.nomZoneProduction}}</td>
+                              <td>{{zone.latitude}}</td>
+                              <td>{{zone.longitude}}</td>
                               <td>
                                   <div class="custom-control custom-switch">
                                       <input type="checkbox" class="custom-control-input" id="customSwitches1">
                                       <label class="custom-control-label" for="customSwitches1"></label>
                                   </div>
                               </td>
+
+                              <td class="text-end">
+                                <a class="btn btn-outline-success btn-rounded"><i class="fas fa-pen text-green"></i></a>
+                                <a  class="btn btn-outline-danger btn-rounded" (click)="supprimerActeur(acteur.idTypeActeur)"><i class="fas fa-trash"></i></a>
+                              </td>
+                              
                           </tr>
                               
                           </tbody>

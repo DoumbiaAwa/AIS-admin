@@ -9,6 +9,7 @@ import { Filiere } from 'src/app/model/filiere';
   styleUrls: ['./produit.component.scss']
 })
 export class ProduitComponent implements OnInit {
+
 filieres: Filiere[] =[];
   constructor(private dialog: MatDialog, private filiereService: FiliereService) {}
   
@@ -16,12 +17,12 @@ filieres: Filiere[] =[];
 
   openDialog() {
     const dialogRef = this.dialog.open(FiliereAddComponent, {
-      width: '1000%',
+      width: '800px',
       height: '500px',
       panelClass: 'warning-dialog',
       position: { 
       top: '-35%',
-       left: '35%' },
+       left: '30%' },
     });
   }
   

@@ -2,7 +2,7 @@
 import { Filiere } from "./filiere";
 import { Acteur } from "./acteur";
 
-export interface Categorie {
+export interface CategorieProduit {
     idCategorieProduit:   string;
     codeCategorie:        string;
     libelleCategorie:     string;

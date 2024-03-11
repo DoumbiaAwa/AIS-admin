@@ -14,8 +14,8 @@
           <div class="mb-3">
             <div class="form-group">
               <label for="etat" class="form-label">Filière</label>
-              <select id="etat" class="form-control" formControlName="filiere">
-                  <option *ngFor="let filiere of filieres" [value]="filiere.libelleFiliere">{{filiere.libelleFiliere}}</option>
+              <select id="etat" class="form-control" formControlName="libelleFiliere">
+                  <option *ngFor="let filiere of filieres" [value]="filiere.idFiliere">{{filiere.libelleFiliere}}</option>
               </select>
           </div>
 

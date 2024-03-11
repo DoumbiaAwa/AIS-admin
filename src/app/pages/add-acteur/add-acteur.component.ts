@@ -4,6 +4,8 @@ import { ActeurService } from 'src/app/services/acteur/acteur.service';
 import { TypeActeur } from 'src/app/model/typeActeur';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
+
+
 @Component({
   selector: 'app-add-acteur',
   templateUrl: './add-acteur.component.html',
@@ -37,6 +39,7 @@ export class AddActeurComponent implements OnInit {
     this.acteurService.addType(acteurFormValue).subscribe(
       (data) => {
         console.log(data);
+        this.dialogRef.close();
       },
       (error) => {
         console.error('Error:', error);

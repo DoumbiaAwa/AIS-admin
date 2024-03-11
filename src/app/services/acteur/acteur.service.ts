@@ -5,6 +5,7 @@ import { tap, catchError } from 'rxjs/operators';
 import { read } from 'fs';
 import { TypeActeur } from 'src/app/model/typeActeur';
 import { shareReplay } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })

@@ -37,7 +37,6 @@ export class LoginService {
     const storedUser = localStorage.getItem(this.currentUserKey);
     if (storedUser) {
       this.currentUser = JSON.parse(storedUser);
-      console.log('service', this.currentUser);
       return this.currentUser;
     } else {
       return null; // or a default value according to your needs
